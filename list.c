@@ -48,7 +48,7 @@ void* firstList(List* list)
         {
             if (list->current == NULL)
             {
-                return list->current;
+                return list->head;
             }
         }
     }
