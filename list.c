@@ -42,7 +42,7 @@ List* createList()
 
 void* firstList(List* list) 
 {
-    assert(list->head != NULL);
+    assert(list->head == NULL);
     list->current = list->head;
     return list->head->data; 
 }
