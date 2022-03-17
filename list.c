@@ -128,10 +128,12 @@ void * popCurrent(List * list)
     void* dato = list->current->data;
     if (list->current->prev == NULL)
     {
+        list->head = list->current->next;
         list->current->next->prev = NULL;
     }
     else if (list->current->next == NULL)
     {
+        list->tail = list->current->prev;
         list->current->prev->next = NULL;
     }
     else if(list->current->prev != NULL && list->current->next != NULL)
