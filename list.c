@@ -44,7 +44,7 @@ void* firstList(List* list)
 {
     assert(list->current->data != NULL);
     list->current = list->head;
-    return list->current->data;
+    return list->current;
 }
 
 void* nextList(List* list) 
