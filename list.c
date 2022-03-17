@@ -42,7 +42,7 @@ List* createList()
 
 void* firstList(List* list) 
 {
-    return list->current->data;
+    return list->tail->data;
 }
 
 void* nextList(List* list) 
