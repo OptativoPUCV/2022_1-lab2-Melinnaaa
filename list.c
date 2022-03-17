@@ -125,8 +125,6 @@ void pushCurrent(List * list, void * data)
         {
             tmp->next = list->current->next;
             tmp->prev = list->current;
-            list->head = tmp;
-            tmp->data = data;
         }
     }
 }
