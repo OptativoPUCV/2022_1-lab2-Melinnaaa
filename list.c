@@ -43,7 +43,7 @@ List* createList()
 void* firstList(List* list) 
 {
     list->current = list->head;
-    return list->head->next; //Tira error, no se el por que
+    return list->head->data; //Tira error, no se el por que
 }
 
 void* nextList(List* list) 
