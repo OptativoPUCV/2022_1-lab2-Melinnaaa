@@ -422,3 +422,13 @@ Thu Mar 17 16:09:07 HSP 2022:
  1 file changed, 5 insertions(+), 1 deletion(-)
  tests:  0|0
 6e3b93d
+Thu Mar 17 16:10:51 HSP 2022: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function 'prevList':
+list.c:69:20: error: 'List' {aka 'struct List'} has no member named 'prev'
+         return list->prev->data;
+                    ^~
+Compilation failed
+b3a62ec
