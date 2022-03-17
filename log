@@ -405,3 +405,9 @@ list.c:45:14: error: format '%d' expects argument of type 'int', but argument 2 
 cc1.exe: all warnings being treated as errors
 Compilation failed
 72cc1c2
+Thu Mar 17 16:06:02 HSP 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+bf801f6
