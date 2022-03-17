@@ -42,42 +42,38 @@ List* createList()
 
 void* firstList(List* list) 
 {
-    if (list->head == NULL)
+    if (list->head != NULL)
     {
-        return NULL;
+        list->current = list->head;
+        return list->head->data;     
     }
-    list->current = list->head;
-    return list->head->data; 
 }
 
 void* nextList(List* list) 
 {
-    if (list->current->next == NULL)
+    if (list->current->next != NULL)
     {
-        return NULL;
+        list->current = list->current;
+        return list->current->data;
     }
-    list->current = list->current;
-    return list->current->data;
 }
 
 void* lastList(List* list) 
 {
-    if (list->tail == NULL)
+    if (list->tail != NULL)
     {
-        return NULL;
+        list->current = list->tail;
+        return list->tail->data;
     }
-    list->current = list->tail;
-    return list->tail->data;
 }
 
 void* prevList(List* list) 
 {
-    if(list->current->prev == NULL)
+    if(list->current->prev != NULL)
     {
-        return NULL;
+        list->current = list->current->prev;
+        return list->current->data;
     }
-    list->current = list->current->prev;
-    return list->current->data;
 }
 
 void pushFront(List* list, void* data) 
