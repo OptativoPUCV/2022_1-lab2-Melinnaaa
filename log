@@ -289,3 +289,38 @@ list.c:77:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1.exe: all warnings being treated as errors
 Compilation failed
 7461c87
+Thu Mar 17 15:49:06 HSP 2022: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+list.c: In function 'firstList':
+list.c:50:5: error: 'return' with no value, in function returning non-void [-Werror]
+     return;
+     ^~~~~~
+list.c:43:7: note: declared here
+ void* firstList(List* list)
+       ^~~~~~~~~
+list.c: In function 'nextList':
+list.c:60:5: error: 'return' with no value, in function returning non-void [-Werror]
+     return;
+     ^~~~~~
+list.c:53:7: note: declared here
+ void* nextList(List* list)
+       ^~~~~~~~
+list.c: In function 'lastList':
+list.c:70:5: error: 'return' with no value, in function returning non-void [-Werror]
+     return;
+     ^~~~~~
+list.c:63:7: note: declared here
+ void* lastList(List* list)
+       ^~~~~~~~
+list.c: In function 'prevList':
+list.c:80:5: error: 'return' with no value, in function returning non-void [-Werror]
+     return;
+     ^~~~~~
+list.c:73:7: note: declared here
+ void* prevList(List* list)
+       ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+8dcdc36
