@@ -43,7 +43,7 @@ List* createList()
 void* firstList(List* list) 
 {
 
-    return list->head->data;
+    return NULL;
 }
 
 void* nextList(List* list) 
