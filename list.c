@@ -42,7 +42,16 @@ List* createList()
 
 void* firstList(List* list) 
 {
-
+    if (list->current != NULL)
+    {
+        if (list->current->next != NULL)
+        {
+            if (list->current == NULL)
+            {
+                return list->current;
+            }
+        }
+    }
     return NULL;
 }
 
@@ -63,6 +72,13 @@ void* prevList(List* list)
 
 void pushFront(List* list, void* data) 
 {
+    Node* nodo = createNode(data);
+    assert(nodo != NULL);
+    nodo->next =  list->head;
+    nodo->prev = NULL;
+    assert(list->head != NULL);
+    
+
 
 }
 
