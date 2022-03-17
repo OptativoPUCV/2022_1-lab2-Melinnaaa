@@ -42,17 +42,7 @@ List* createList()
 
 void* firstList(List* list) 
 {
-    if (list->current != NULL)
-    {
-        if (list->current->next != NULL)
-        {
-            if (list->current == NULL)
-            {
-                return list->head;
-            }
-        }
-    }
-    return NULL;
+    return list->head;
 }
 
 void* nextList(List* list) 
