@@ -43,12 +43,18 @@ List* createList()
 void* firstList(List* list) 
 {
     list->current = list->head;
-    return list->current->data;
+    return list->head->prev; //Tira error, no se el por que
 }
 
 void* nextList(List* list) 
 {
-    
+    Node* tmp;
+    if (list->current->next != NULL)
+    {
+        tmp = list->current->next;
+        list->current->prev = list->current;
+        list->current = tmp;
+    }
     return list->current->data;
 }
 
