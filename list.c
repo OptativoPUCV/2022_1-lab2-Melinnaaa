@@ -42,12 +42,21 @@ List* createList()
 
 void* firstList(List* list) 
 {
-    printf("%p", list->head->data);
+    if (list->head != NULL)
+    {
+        list->current = list->head;
+        return list->head->data;
+    }
     return NULL;
 }
 
 void* nextList(List* list) 
 {
+    if (list->current->next != NULL)
+    {
+        list->current = list->current;
+        return list->current->data;
+    }
     return NULL;
 }
 
@@ -63,9 +72,12 @@ void* lastList(List* list)
 
 void* prevList(List* list) 
 {
-    list->current->next = list->current;
-    list->current = list->current->prev;
-    return list->current->data; 
+    if(list->current->prev != NULL)
+    {
+        list->current = list->current->prev;
+        return list->current->data;
+    }
+    return NULL;
 }
 
 void pushFront(List* list, void* data) 
