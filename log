@@ -389,3 +389,19 @@ Thu Mar 17 16:04:37 HSP 2022:
  tests:  1|5
 total_score: 10/70
 8b6674d
+Thu Mar 17 16:05:44 HSP 2022: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function 'firstList':
+list.c:45:14: error: format '%d' expects argument of type 'int', but argument 2 has type 'void *' [-Werror=format=]
+     printf("%d", list->head->data);
+             ~^   ~~~~~~~~~~~~~~~~
+             %p
+list.c:45:14: error: format '%d' expects argument of type 'int', but argument 2 has type 'void *' [-Werror=format=]
+     printf("%d", list->head->data);
+             ~^   ~~~~~~~~~~~~~~~~
+             %p
+cc1.exe: all warnings being treated as errors
+Compilation failed
+72cc1c2
