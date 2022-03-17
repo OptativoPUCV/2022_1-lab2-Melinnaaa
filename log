@@ -324,3 +324,8 @@ list.c:73:7: note: declared here
 cc1.exe: all warnings being treated as errors
 Compilation failed
 8dcdc36
+Thu Mar 17 15:49:30 HSP 2022: 
+ list.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+ tests:  0|0
+e00ceb8
