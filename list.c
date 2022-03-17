@@ -72,13 +72,6 @@ void* prevList(List* list)
 
 void pushFront(List* list, void* data) 
 {
-    Node* nodo = createNode(data);
-    assert(nodo != NULL);
-    nodo->next =  list->head;
-    nodo->prev = NULL;
-    assert(list->head != NULL);
-    
-
 
 }
 

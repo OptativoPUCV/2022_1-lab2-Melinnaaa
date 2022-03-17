@@ -63,3 +63,9 @@ Thu Mar 17 13:48:08 HSP 2022:
  tests:  1|2
    [ INFO ] Insertando 99 a la lista (pushfront)
 e916efd
+Thu Mar 17 13:48:40 HSP 2022: 
+ list.c | 7 -------
+ 1 file changed, 7 deletions(-)
+ tests:  1|5
+total_score: 10/70
+bffc690
