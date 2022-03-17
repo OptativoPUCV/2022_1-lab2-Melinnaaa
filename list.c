@@ -93,7 +93,7 @@ void pushFront(List* list, void* data)
         }
         list->head = tmp;
         tmp->prev = NULL;
-        if (tmp->next == NULL)
+        if (list->head->next == NULL) //Si la lista es de largo 1
         {
             list->tail = tmp;
         }
