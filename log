@@ -201,3 +201,14 @@ Thu Mar 17 15:26:52 HSP 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 7f7bac4
+Thu Mar 17 15:30:37 HSP 2022: 
+ list.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function 'prevList':
+list.c:69:11: error: unused variable 'tmp' [-Werror=unused-variable]
+     Node* tmp;
+           ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6da33f4
