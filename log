@@ -504,3 +504,9 @@ Thu Mar 17 18:00:29 HSP 2022:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 c5b07ce
+Thu Mar 17 18:00:42 HSP 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|3
+total_score: 35/70
+b9df9f3
