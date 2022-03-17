@@ -123,8 +123,10 @@ void pushCurrent(List * list, void * data)
         }
         else
         {
+            list->current->prev = tmp->prev;
+            list->current->next = tmp->next;
             tmp->next = list->current->next;
-            tmp->prev = list->current;
+            tmp->prev = list->current->prev;
         }
     }
 }
