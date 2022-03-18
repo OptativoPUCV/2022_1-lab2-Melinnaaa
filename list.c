@@ -111,7 +111,7 @@ void pushCurrent(List * list, void * data)
     Node* tmp = createNode(data);
     if (tmp != NULL)
     {
-        if(list->current->next == NULL)
+        if(list->current->next == NULL)//Si la posición actual es la cola
         {
             tmp->prev = list->tail;
             if(list->tail)
@@ -123,10 +123,10 @@ void pushCurrent(List * list, void * data)
         }
         else
         {
-            list->current->prev = tmp->prev;
+            list->current = tmp->prev;
             list->current->next = tmp->next;
             tmp->next = list->current->next;
-            tmp->prev = list->current->prev;
+            tmp->prev = list->current;
         }
     }
 }
