@@ -131,7 +131,7 @@ void pushCurrent(List * list, void * data)
             list->head = tmp;
             tmp->prev = NULL;
         }
-        else
+        else if (list->current->prev != NULL && list->current->next != NULL)
         { 
             tmp->next = list->current->next;
             tmp->prev = list->current;
